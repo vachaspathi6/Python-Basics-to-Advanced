@@ -127,7 +127,11 @@ This project follows the [Contributor Covenant](CODE_OF_CONDUCT.md) Code of Cond
 ## 📊 Repository Stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=N00BSC00B&repo=Python-Basics-to-Advanced&show_icons=true&theme=tokyonight" alt="Repository Stats">
+  <img src="https://img.shields.io/github/stars/N00BSC00B/Python-Basics-to-Advanced?style=social" alt="Stars">
+  <img src="https://img.shields.io/github/forks/N00BSC00B/Python-Basics-to-Advanced?style=social" alt="Forks">
+  <img src="https://img.shields.io/github/watchers/N00BSC00B/Python-Basics-to-Advanced?style=social" alt="Watchers">
+  <img src="https://img.shields.io/github/issues/N00BSC00B/Python-Basics-to-Advanced" alt="Open Issues">
+  <img src="https://img.shields.io/github/issues-pr/N00BSC00B/Python-Basics-to-Advanced" alt="Open PRs">
 </div>
 
 ## 🤝 Contributors
