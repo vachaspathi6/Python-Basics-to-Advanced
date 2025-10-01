@@ -4,7 +4,10 @@ Thank you to all the amazing people who have contributed to this project! 🎉
 
 ## Hacktoberfest 2025 Contributors
 
-<!-- This section will be updated automatically as contributions come in -->
+- [@N00BSC00B](https://github.com/N00BSC00B)
+- [@harsh-askainstein](https://github.com/harsh-askainstein)
+- [@Ashish-Kumar-Dash](https://github.com/Ashish-Kumar-Dash)
+- [@shresth2708](https://github.com/shresth2708)
 
 ## How to Get Listed
 
