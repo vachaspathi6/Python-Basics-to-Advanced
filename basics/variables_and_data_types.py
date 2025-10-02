@@ -317,3 +317,29 @@ print(f"Words: {words}")
 
 print("\n=== End of Tutorial ===")
 print("Practice tip: Try modifying the values and see how the results change!")
+
+# =============================================================================
+# 11. SUMMARY TABLE OF PYTHON DATA TYPES
+# =============================================================================
+
+print("--- Summary of Python Data Types ---\n")
+
+data_types_summary = [
+    ("int", "Whole numbers (e.g., 5, -10, 2025)"),
+    ("float", "Decimal numbers (e.g., 3.14, -2.5)"),
+    ("complex", "Numbers with real and imaginary parts (e.g., 2 + 3j)"),
+    ("str", "Sequence of characters (e.g., 'Hello')"),
+    ("bool", "Boolean values True or False"),
+    ("list", "Ordered, mutable collection (e.g., [1, 2, 3])"),
+    ("tuple", "Ordered, immutable collection (e.g., (1, 2, 3))"),
+    ("dict", "Key-value pairs (e.g., {'name': 'Alice', 'age': 25})"),
+    ("set", "Unordered collection of unique elements (e.g., {1, 2, 3})"),
+]
+
+print(f"{'Data Type':<10} | Description")
+print("-" * 50)
+for dtype, desc in data_types_summary:
+    print(f"{dtype:<10} | {desc}")
+
+print("\n💡 Tip: Use the 'type()' function to check any variable’s data type!")
+print("\n=== End of Extended Tutorial ===")
