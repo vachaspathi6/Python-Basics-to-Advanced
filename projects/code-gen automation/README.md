@@ -49,6 +49,47 @@ python code_generator.py "Two Sum" python --debug-connect --log-level DEBUG
 - Endpoint: `https://models.github.ai/inference`
 - Model: `openai/gpt-4o-mini`
 
+## Docker
+
+Build the image:
+```bash
+docker build -t code-gen-cli:latest .
+```
+
+Run with token via env var (no volume needed):
+- PowerShell:
+```powershell
+docker run --rm -it ^
+  -e GITHUB_TOKEN=ghp_xxx ^
+  code-gen-cli:latest "Two Sum" python
+```
+- bash:
+```bash
+docker run --rm -it \
+  -e GITHUB_TOKEN=ghp_xxx \
+  code-gen-cli:latest "Two Sum" python
+```
+
+Run with mounted `secret.txt` and persisted `output/`:
+- PowerShell:
+```powershell
+docker run --rm -it ^
+  -v "${PWD}\secret.txt:/app/secret.txt:ro" ^
+  -v "${PWD}\output:/app/output" ^
+  code-gen-cli:latest "Two Sum" python
+```
+- bash:
+```bash
+docker run --rm -it \
+  -v "$(pwd)/secret.txt:/app/secret.txt:ro" \
+  -v "$(pwd)/output:/app/output" \
+  code-gen-cli:latest "Two Sum" python
+```
+
+Notes:
+- If both env var and `secret.txt` are provided, `secret.txt` takes precedence (file is used).
+- Generated files are saved in `/app/output`; mount it to keep results on the host.
+
 ## How others can use this tool
 1) Fork this repository on GitHub
 
