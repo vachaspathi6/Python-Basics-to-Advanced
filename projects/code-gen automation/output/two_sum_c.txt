@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+// Function to find two indices such that their values add up to the target
+// Returns dynamic array of indices or NULL if no solution is found
+int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
+    // Allocate memory for the return array
+    int* indices = (int*)malloc(2 * sizeof(int));
+    *returnSize = 0; // Initialize returnSize to 0
+
+    // Check all pairs of numbers
+    for (int i = 0; i < numsSize; i++) {
+        for (int j = i + 1; j < numsSize; j++) {
+            // Check if the sum of the two numbers equals the target
+            if (nums[i] + nums[j] == target) {
+                indices[0] = i;   // First index
+                indices[1] = j;   // Second index
+                *returnSize = 2;  // Set returnSize to 2
+                return indices;   // Return the indices
+            }
+        }
+    }
+
+    // Return NULL if no indices found
+    free(indices);
+    return NULL;
+}
+
+// Example usage of the twoSum function
+int main() {
+    int nums[] = {2, 7, 11, 15}; // Example array
+    int target = 9;              // Example target sum
+    int returnSize = 0;          // Size of the return array
+
+    // Call the twoSum function
+    int* result = twoSum(nums, sizeof(nums) / sizeof(nums[0]), target, &returnSize);
+
+    // Check if result is found
+    if (result != NULL) {
+        printf("Indices: %d, %d\n", result[0], result[1]); // Output the indices
+        free(result); // Free allocated memory
+    } else {
+        printf("No two sum solution found.\n"); // Output if no solution
+    }
+
+    return 0; // Exit the program
+}
