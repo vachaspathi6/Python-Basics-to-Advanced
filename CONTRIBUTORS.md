@@ -8,6 +8,12 @@ Thank you to all the amazing people who have contributed to this project! 🎉
 - [@harsh-askainstein](https://github.com/harsh-askainstein)
 - [@Ashish-Kumar-Dash](https://github.com/Ashish-Kumar-Dash)
 - [@shresth2708](https://github.com/shresth2708)
+- [@Golixco](https://github.com/Golixco)
+- [@ilyas829](https://github.com/ilyas829)
+- [@Shreekant-Bharti](https://github.com/Shreekant-Bharti)
+- [@Shrihari25-hub](https://github.com/Shrihari25-hub)
+- [@pawanrajsingh2088](https://github.com/pawanrajsingh2088)
+- [@AnushkaJagtap22](https://github.com/AnushkaJagtap22)
 
 ## How to Get Listed
 
