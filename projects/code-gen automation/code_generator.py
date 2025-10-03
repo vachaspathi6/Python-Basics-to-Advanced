@@ -66,6 +66,22 @@ def generate_code(program_name: str, language: str, token: str, endpoint: str = 
 
     raise Exception(f"Failed to generate after retries: {last_error}")
 
+
+def _safe_filename(program_name: str, language: str) -> str:
+    base = "".join(c for c in program_name if c.isalnum() or c in (" ", "-", "_")).strip()
+    base = base.replace(" ", "_").lower() or "generated_code"
+    return f"{base}_in_{language.lower()}.txt"
+
+
+def save_output(program_name: str, language: str, content: str) -> str:
+    """Save generated content to output/<safe>_<lang>.txt and return the path."""
+    out_dir = Path("output")
+    out_dir.mkdir(parents=True, exist_ok=True)
+    filename = _safe_filename(program_name, language)
+    out_path = out_dir / filename
+    out_path.write_text(content, encoding="utf-8")
+    return str(out_path)
+
 import os
 def debug_connection(token: str, endpoint: str = DEFAULT_ENDPOINT) -> None:
     """Deep connectivity diagnostics with extensive logging."""
@@ -147,7 +163,9 @@ def main() -> None:
         debug_connection(token, DEFAULT_ENDPOINT)
     try:
         code = generate_code(args.program_name, args.language, token)
+        saved_path = save_output(args.program_name, args.language, code)
         print(code)
+        print(f"\nSaved to: {saved_path}")
     except KeyboardInterrupt:
         print("\nOperation cancelled.")
         sys.exit(1)
