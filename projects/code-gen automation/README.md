@@ -49,6 +49,44 @@ python code_generator.py "Two Sum" python --debug-connect --log-level DEBUG
 - Endpoint: `https://models.github.ai/inference`
 - Model: `openai/gpt-4o-mini`
 
+## How others can use this tool
+1) Fork this repository on GitHub
+
+2) Clone your fork
+```bash
+git clone https://github.com/<your-username>/Python-Basics-to-Advanced.git
+cd Python-Basics-to-Advanced/Python-Basics-to-Advanced/projects/code-gen automation
+```
+
+3) Create a virtual environment and install dependencies
+```bash
+python -m venv .venv
+source .venv/bin/activate   # Windows PowerShell: .\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+```
+
+4) Add your token to `secret.txt`
+```text
+<YOUR_GITHUB_TOKEN_HERE>
+```
+- Single line, no quotes, no variable name
+
+5) Run the generator
+```bash
+python code_generator.py "Two Sum" python
+```
+
+6) Optional: verbose logs and diagnostics
+```bash
+python code_generator.py "Two Sum" python --log-level DEBUG
+python code_generator.py "Two Sum" python --debug-connect --log-level DEBUG
+```
+
+Notes for contributors
+- Do not commit real tokens. `secret.txt` is git‑ignored.
+- Open a PR from your fork’s branch to propose improvements.
+- If you change dependencies, update `requirements.txt` accordingly.
+
 ## Troubleshooting
 - 401 Unauthorized in diagnostics: token missing/invalid or lacks Models permissions
 - 429 Too Many Requests: rate limit; wait and retry
