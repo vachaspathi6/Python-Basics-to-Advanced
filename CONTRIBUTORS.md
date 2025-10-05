@@ -14,6 +14,7 @@ Thank you to all the amazing people who have contributed to this project! 🎉
 - [@Shrihari25-hub](https://github.com/Shrihari25-hub)
 - [@pawanrajsingh2088](https://github.com/pawanrajsingh2088)
 - [@AnushkaJagtap22](https://github.com/AnushkaJagtap22)
+- [@Flash-Maxi](https://github.com/Flash-Maxi)
 
 ## How to Get Listed
 
