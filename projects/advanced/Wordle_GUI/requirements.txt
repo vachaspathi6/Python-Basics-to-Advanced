@@ -1,0 +1,19 @@
+# Wordle GUI - Python Requirements
+# This project uses built-in Python libraries
+
+# Core GUI library (included with most Python installations)
+# tkinter>=8.6
+
+# Note: tkinter is included with Python standard library
+# If tkinter is not available on your system, install it via:
+# - Windows: Usually included with Python
+# - macOS: Usually included with Python  
+# - Linux (Ubuntu/Debian): sudo apt-get install python3-tk
+# - Linux (CentOS/RHEL): sudo yum install tkinter
+
+# Development dependencies (optional)
+# black>=22.0.0         # Code formatting
+# flake8>=4.0.0         # Linting
+# mypy>=0.950           # Type checking
+
+# No additional packages required for basic functionality
